@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="content">
+	<div class="post">
+		<h3>
+			{{ article.title }}
+		</h3> 
+		<div class="info">
+			{{ article.locale_date }} 
+			{% if article.author %}
+				توسط <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+			{% endif %}  
+		</div>
+		<div class="content">
+			{{ article.content }}
+		</div>
+	</div>
+	{% include 'disqus.html' %}
+</div>
+{% endblock %}

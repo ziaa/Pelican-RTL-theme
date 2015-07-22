@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+{% block content_title %}{% endblock %}
+<div class="content">
+	<div class="post-list">
+	{% for article in articles_page.object_list %}
+		<div class="post">
+			<h4>
+				<a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title }}">{{ article.title }}</a>
+			</h4>
+			<p>{{ article.summary }}</p>
+		</div>
+	{% endfor %}
+	</div>
+	{% include 'pagination.html' %}
+</div>
+{% endblock %}

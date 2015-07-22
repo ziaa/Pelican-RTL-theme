@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }} - برچسب‌ها{% endblock %}
+{% block content %}
+<h3>برچسب‌ها</h3>
+<ul>
+{% for tag, articles in tags %}
+    <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

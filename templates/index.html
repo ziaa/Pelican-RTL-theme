@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="content">
+	<div class="posts">
+		{% for article in articles_page.object_list %}
+			<div class="post">
+				<h3>
+					<a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title}}">{{ article.title }}</a>
+				</h3> 
+				<div class="info">
+					{{ article.locale_date }} 
+					{% if article.author %}
+						توسط <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+					{% endif %}  
+				</div>
+				<div class="content">
+					{{ article.content }}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	{% include 'pagination.html' %}
+</div>
+{% endblock content %}
