@@ -1,15 +1,16 @@
 {% extends "base.html" %}
+{% block title %}{{ article.title|striptags }}{% endblock %}
 {% block content %}
 <div class="content">
 	<div class="post">
 		<h3>
 			{{ article.title }}
-		</h3> 
+		</h3>
 		<div class="info">
-			{{ article.locale_date }} 
+			{{ article.locale_date }}
 			{% if article.author %}
 				توسط <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
-			{% endif %}  
+			{% endif %}
 		</div>
 		<div class="content">
 			{{ article.content }}
