@@ -71,6 +71,10 @@ html, body {
 .banner a {
 	padding: 10px;
 }
+.banner h1 {
+	color: #858585;
+	font-size: 30px;
+}
 
 .post {
 	margin-bottom: 40px;
