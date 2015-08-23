@@ -20,6 +20,9 @@
 		<div class="container">
 			<div class="banner">
 				<a href="{{ SITEURL }}">{{ SITENAME }}</a>
+				{% if SITE_DESCRIPTION %}
+				<h1>{{ SITE_DESCRIPTION }}</h1>
+				{% endif %}
 			</div>
 			{% block content %}
 			{% endblock %}
