@@ -10,7 +10,7 @@
 	<meta charset="utf-8" />
 
 	{% if FEED_ALL_ATOM %}
-	<link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="خبرخوان {{ SITENAME }}" />
+	<link rel="alternate" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" title="خبرخوان {{ SITENAME }} {% if SITESUBTITLE %}-{{ SITESUBTITLE }} {% endif %}" />
 	{% endif %}
 
 	{% endblock head %}
@@ -20,8 +20,8 @@
 		<div class="container">
 			<div class="banner">
 				<a href="{{ SITEURL }}">{{ SITENAME }}</a>
-				{% if SITE_DESCRIPTION %}
-				<h1>{{ SITE_DESCRIPTION }}</h1>
+				{% if SITESUBTITLE %}
+				<h1>{{ SITESUBTITLE }}</h1>
 				{% endif %}
 			</div>
 			{% block content %}
