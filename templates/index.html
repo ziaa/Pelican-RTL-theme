@@ -6,12 +6,12 @@
 			<div class="post">
 				<h3>
 					<a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title}}">{{ article.title }}</a>
-				</h3> 
+				</h3>
 				<div class="info">
-					{{ article.locale_date }} 
+					{{ article.locale_date }}
 					{% if article.author %}
 						توسط <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
-					{% endif %}  
+					{% endif %}
 				</div>
 				<div class="content">
 					{{ article.content }}
@@ -19,6 +19,8 @@
 			</div>
 		{% endfor %}
 	</div>
-	{% include 'pagination.html' %}
+	{% if articles_page.has_other_pages() %}
+		{% include 'pagination.html' %}
+	{% endif %}
 </div>
 {% endblock content %}
