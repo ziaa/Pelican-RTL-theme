@@ -19,6 +19,8 @@
 			</div>
 		{% endfor %}
 	</div>
-	{% include 'pagination.html' %}
+	{% if articles_page.has_other_pages() %}
+		{% include 'pagination.html' %}
+	{% endif %}
 </div>
 {% endblock content %}
