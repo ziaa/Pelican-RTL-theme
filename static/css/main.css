@@ -9,9 +9,6 @@
 	src: url('../font/BMitraBold.eot?#') format('eot'), url('../font/BMitraBold.woff') format('woff'), url('../font/BMitraBold.ttf') format('truetype');
 }
 
-body {
-	direction: rtl;
-}
 p {
 	text-align: justify;
 }
@@ -25,11 +22,8 @@ body {
 h1, h2, h3 {
 	font-weight: bold;
 }
-[class*="col-"] {
-	float: right;
-}
-.nav-tabs>li, .nav-pills>li {
-	float: right;
+code, kbd, pre, samp {
+    direction: ltr !important;
 }
 .container {
 	max-width: 700px;
