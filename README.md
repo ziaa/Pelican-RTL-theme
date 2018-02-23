@@ -20,6 +20,13 @@ This theme is useful for Persian blogs.
 THEME = "/path/to/themes/Pelican-RTL-theme"
 ```
 
+4. (Optional) Set the theme font in `pelicanconf.py` using the syntax:
+```
+THEME_FONT = "Vazir"
+```
+
+Currently there are two implemented fonts: "Vazir" and "BMitra"(default).
+
 (More information on using Pelican themes
   [+](https://github.com/getpelican/pelican-themes#using-themes)
   [+](http://docs.getpelican.com/en/3.6.0/pelican-themes.html))
