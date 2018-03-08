@@ -1,0 +1,16 @@
+@font-face {
+	font-family: BMitra;
+	font-weight: normal;
+	src: local(BMitra), url('../font/BMitra.eot?#') format('eot'), url('../font/BMitra.woff') format('woff'), url('../font/BMitra.ttf') format('truetype');
+}
+@font-face {
+	font-family: BMitra;
+	font-weight: bold;
+	src: local(BMitraBold), url('../font/BMitraBold.eot?#') format('eot'), url('../font/BMitraBold.woff') format('woff'), url('../font/BMitraBold.ttf') format('truetype');
+}
+
+body, h1, h2, h3, h4 {
+	font-family: BMitra;
+	font-size: 18px;
+	line-height: 24px;
+}

@@ -2,8 +2,16 @@
 This is a [Pelican](http://getpelican.com) (Static Site Generator) theme.
 This theme is useful for Persian blogs.
 
-![Pelican-RTL-theme Preview](./Preview.PNG "Pelican-RTL-theme Preview")
+## Preview
+1. Using the default font ([Vazir](https://github.com/rastikerdar/vazir-font))
 
+
+![Pelican-RTL-theme Vazir font Preview](./Preview-Vazir-font.png "Pelican-RTL-theme Vazir font Preview")
+
+2. Using "BMitra" font
+
+
+![Pelican-RTL-theme Preview](./Preview.PNG "Pelican-RTL-theme BMitra font Preview")
 ## Installation
 1. Choose a location to hold your theme. Here we use `themes` directory
 2. Get the theme in any way which is convenient for you. for example:
@@ -19,6 +27,13 @@ This theme is useful for Persian blogs.
 ```
 THEME = "/path/to/themes/Pelican-RTL-theme"
 ```
+
+4. (Optional) Set the theme font in `pelicanconf.py` using the syntax:
+```
+THEME_FONT = "BMitra"
+```
+
+Currently there are two implemented fonts: "[Vazir](https://github.com/rastikerdar/vazir-font)" which is the default font and "BMitra".
 
 (More information on using Pelican themes
   [+](https://github.com/getpelican/pelican-themes#using-themes)
